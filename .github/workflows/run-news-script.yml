@@ -22,7 +22,8 @@ jobs:
         run: pip install -r News-Pulse-Backend/requirements.txt
 
       - name: Write Firebase JSON to file
-        run: printf '%s' "${{ secrets.FIREBASE_JSON }}" > News-Pulse-Backend/serviceAccountKey.json
+        run: echo "${{ secrets.FIREBASE_JSON }}" | base64 -d > News-Pulse-Backend/serviceAccountKey.json
+        #run: printf '%s' "${{ secrets.FIREBASE_JSON }}" > News-Pulse-Backend/serviceAccountKey.json
 
       - name: Run sentiment analysis script
         env:
