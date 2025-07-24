@@ -1,0 +1,31 @@
+name: Run News Sentiment Script Daily
+
+on:
+  schedule:
+    - cron: '30 6 * * *'  # 12:00 PM IST daily
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install -r News-Pulse-Backend/requirements.txt
+
+      - name: Write Firebase JSON to file
+        run: echo "${{ secrets.FIREBASE_JSON }}" > News-Pulse-Backend/serviceAccountKey.json
+
+      - name: Run sentiment analysis script
+        env:
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+          FIREBASE_CREDENTIALS_PATH: News-Pulse-Backend/serviceAccountKey.json
+        run: python News-Pulse-Backend/news_pipeline.py
