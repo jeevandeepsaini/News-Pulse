@@ -24,7 +24,7 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer, Auto
 
 # API Key
 NEWS_API_KEY = os.getenv("NEWS_API_KEY")
-firebase_key_path = os.getenv("FIREBASE_CREDENTIALS_PATH") or "Python-Backend/serviceAccountKey.json"
+firebase_key_path = os.getenv("FIREBASE_CREDENTIALS_PATH") or "News-Pulse-Backend/serviceAccountKey.json"
 
 # Initialize Firebase
 cred = credentials.Certificate(firebase_key_path)
