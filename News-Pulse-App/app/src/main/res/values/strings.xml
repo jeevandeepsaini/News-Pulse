@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">News Pulse</string>
+    <string name="forgotPasswordText">Enter the email address associated with your account. We\'ll email you a link to reset your password.</string>
+    <string name="helpAndSupportText">We hope you love our product as much as we enjoy making them available to you. Please do not hesitate to email us if you have any concerns or suggestions.</string>
+    <string name="about">News Pulse is an intelligent news aggregator that delivers personalized news while providing real-time sentiment analysis for deeper insights. Users can sign up, select their preferred categories, and explore curated articles labeled as positive, negative, or neutral—helping them quickly understand the tone of the content. With a seamless experience, you can browse the latest news, bookmark your favorites, and read full articles within the app. Sharing important stories is just a tap away, ensuring you stay informed effortlessly. Backed by secure cloud storage, News Pulse offers a streamlined and insightful news experience anytime, anywhere.</string>
+</resources>
+

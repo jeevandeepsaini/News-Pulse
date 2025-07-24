@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".Account">
+
+    <RelativeLayout
+        android:id="@+id/headingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        tools:ignore="UselessLeaf,UselessParent">
+
+        <TextView
+            android:id="@+id/headingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/merriweather"
+            android:paddingVertical="70dp"
+            android:text="My Account"
+            android:textColor="#543986"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="5dp">
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/option_bg">
+
+                <ImageView
+                    android:id="@+id/icon1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/account"
+                    tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/arrow1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/forward"
+                    tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+                <TextView
+                    android:id="@+id/myProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/icon1"
+                    android:fontFamily="@font/merriweather"
+                    android:text="Profile"
+                    android:textColor="#543986"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout1"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/option_bg">
+
+                <ImageView
+                    android:id="@+id/icon2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/bookmarks"
+                    tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/arrow2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/forward"
+                    tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+                <TextView
+                    android:id="@+id/myBookmarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/icon2"
+                    android:fontFamily="@font/merriweather"
+                    android:text="Bookmarks"
+                    android:textColor="#543986"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout2"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/option_bg">
+
+                <ImageView
+                    android:id="@+id/icon3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/password"
+                    tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/arrow3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/forward"
+                    tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+                <TextView
+                    android:id="@+id/changePass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/icon3"
+                    android:fontFamily="@font/merriweather"
+                    android:text="Change Password"
+                    android:textColor="#543986"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout3"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/option_bg">
+
+                <ImageView
+                    android:id="@+id/icon4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/help"
+                    tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/arrow4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/forward"
+                    tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+                <TextView
+                    android:id="@+id/help"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/icon4"
+                    android:fontFamily="@font/merriweather"
+                    android:text="Help and Support"
+                    android:textColor="#543986"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout4"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/option_bg">
+
+                <ImageView
+                    android:id="@+id/icon5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/info"
+                    tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/arrow5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/forward"
+                    tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+                <TextView
+                    android:id="@+id/about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/icon5"
+                    android:fontFamily="@font/merriweather"
+                    android:text="About News Pulse"
+                    android:textColor="#543986"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/deleteAccount"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#543986"
+            android:fontFamily="@font/merriweather"
+            android:text="Logout"
+            android:textStyle="bold"
+            app:cornerRadius="5dp"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/deleteAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="48dp"
+            android:backgroundTint="@android:color/transparent"
+            android:fontFamily="@font/merriweather"
+            android:text="Permanently Delete Account"
+            android:textColor="#D32F2F"
+            android:textStyle="bold"
+            app:cornerRadius="5dp"
+            app:strokeColor="#D32F2F "
+            app:strokeWidth="1dp"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

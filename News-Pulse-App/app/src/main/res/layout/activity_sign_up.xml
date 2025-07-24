@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:orientation="vertical"
+    tools:context=".SignUp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/headingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/merriweather"
+            android:paddingVertical="70dp"
+            android:text="Create Account"
+            android:textColor="#543986"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headingText"
+            android:layout_marginBottom="70dp"
+            android:fontFamily="@font/merriweather"
+            android:gravity="center"
+            android:text="Smarter, tailored news — just for you."
+            android:textColor="#695295"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="#543986"
+            android:visibility="invisible" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:hint="Name"
+            android:paddingHorizontal="5dp"
+            android:textColorHint="#6B000000"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/account"
+            app:startIconTint="#543986"
+            tools:ignore="HardcodedText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/merriweather"
+                android:inputType="text"
+                android:paddingStart="36dp"
+                android:textColor="@color/black"
+                tools:ignore="RtlSymmetry" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameLayout"
+            android:hint="Email"
+            android:paddingHorizontal="5dp"
+            android:textColorHint="#6B000000"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/mail"
+            app:startIconTint="#543986"
+            tools:ignore="HardcodedText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/merriweather"
+                android:inputType="textEmailAddress"
+                android:paddingStart="36dp"
+                android:textColor="@color/black"
+                tools:ignore="RtlSymmetry" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailLayout"
+            android:hint="Password"
+            android:paddingHorizontal="5dp"
+            android:textColorHint="#6B000000"
+            app:endIconMode="password_toggle"
+            app:endIconTint="#543986"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/password"
+            app:startIconTint="#543986"
+            tools:ignore="HardcodedText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/merriweather"
+                android:inputType="textPassword"
+                android:paddingStart="36dp"
+                android:textColor="@color/black"
+                tools:ignore="RtlSymmetry" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirmPasswordLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordLayout"
+            android:layout_centerInParent="true"
+            android:hint="Confirm Password"
+            android:paddingHorizontal="5dp"
+            android:textColorHint="#6B000000"
+            app:endIconMode="password_toggle"
+            app:endIconTint="#543986"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/password"
+            app:startIconTint="#543986"
+            tools:ignore="HardcodedText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/merriweather"
+                android:inputType="textPassword"
+                android:paddingStart="36dp"
+                android:textColor="@color/black"
+                tools:ignore="RtlSymmetry" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/createAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirmPasswordLayout"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#543986"
+            android:fontFamily="@font/merriweather"
+            android:text="Create Account"
+            android:textStyle="bold"
+            app:cornerRadius="5dp"
+            tools:ignore="HardcodedText" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/merriweather"
+                android:text="Already have an account?"
+                android:textColor="#543986"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/loginActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/text2"
+                android:fontFamily="@font/merriweather"
+                android:text=" Login Here."
+                android:textColor="#543986"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

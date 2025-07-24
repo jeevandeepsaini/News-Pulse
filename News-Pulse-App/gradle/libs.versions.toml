@@ -1,0 +1,51 @@
+[versions]
+agp = "8.11.1"
+cardview = "1.0.0"
+compiler = "4.16.0"
+credentials = "1.5.0"
+firebaseAuth = "24.0.0"
+firebaseBom = "34.0.0"
+githubGlide = "4.16.0"
+googleid = "1.1.1"
+googleServices = "4.4.3"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.1"
+lifecycleViewmodelKtx = "2.9.2"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+playServicesAuth = "21.3.0"
+recyclerview = "1.4.0"
+swiperefreshlayout = "1.1.0"
+
+
+
+
+[libraries]
+cardview = { module = "androidx.cardview:cardview", version.ref = "cardview" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "compiler" }
+credentials = { module = "androidx.credentials:credentials", version.ref = "credentials" }
+firebase-auth = { module = "com.google.firebase:firebase-auth" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-firestore = { module = "com.google.firebase:firebase-firestore" }
+github-glide = { module = "com.github.bumptech.glide:glide", version.ref = "githubGlide" }
+google-firebase-auth = { module = "com.google.firebase:firebase-auth", version.ref = "firebaseAuth" }
+google-services = { module = "com.google.gms:google-services", version.ref = "googleServices" }
+googleid = { module = "com.google.android.libraries.identity.googleid:googleid", version.ref = "googleid" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
+swiperefreshlayout = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swiperefreshlayout" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="newsPulse">#543986</color>
+    <color name="lightPurple">#a38ecb</color>
+    <color name="sentiment_positive">#00ff0a</color> <!-- Green -->
+    <color name="sentiment_neutral">#008eff</color> <!-- Blue -->
+    <color name="sentiment_negative">#ff0000</color> <!-- Red -->
+</resources>

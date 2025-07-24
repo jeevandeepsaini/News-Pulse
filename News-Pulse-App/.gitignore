@@ -1,0 +1,40 @@
+# === IDE and Android Studio ===
+.idea/
+*.iml
+.gradle/
+local.properties
+.DS_Store
+
+# === Build outputs ===
+/build/
+*/build/
+.cxx/
+.externalNativeBuild/
+captures/
+
+# === .idea subfolders ===
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+
+# === Firebase secrets ===
+app/google-services.json
+firebase-debug.log
+.firebaserc
+.firebase/
+
+# === Signing keys ===
+*.jks
+*.keystore
+*.keystore.properties
+
+# === Firebase Analytics ===
+app/crashlytics-build.properties
+
+# === Misc ===
+*.log
+*.swp
+*.tmp

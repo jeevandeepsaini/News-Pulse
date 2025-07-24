@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:orientation="vertical"
+    tools:context=".Help">
+
+    <RelativeLayout
+        android:id="@+id/headingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        tools:ignore="UselessLeaf,UselessParent">
+
+        <TextView
+            android:id="@+id/headingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/merriweather"
+            android:paddingTop="70dp"
+            android:text="Help and Support"
+            android:textColor="#543986"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:layout_below="@id/headingText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="40dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/support"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/merriweather"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="3dp"
+            android:paddingHorizontal="5dp"
+            android:text="@string/helpAndSupportText"
+            android:textColor="#543986"
+            android:textSize="15sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/contactUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="48dp"
+            android:backgroundTint="#543986"
+            android:fontFamily="@font/merriweather"
+            android:text="Contact Us"
+            android:textStyle="bold"
+            app:cornerRadius="5dp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+</RelativeLayout>
