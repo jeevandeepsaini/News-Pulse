@@ -21,6 +21,33 @@
 ![Article Detail](screenshots/article_detail.png)
 ![Categories](screenshots/categories.png)
 
+<table>
+<tr>
+   <td><img src="https://github.com/jeevandeepsaini/News-Pulse/blob/main/News-Pulse-App/Screenshots/Main.png" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/News-Pulse/blob/main/News-Pulse-App/Screenshots/Login.png" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/News-Pulse/blob/main/News-Pulse-App/Screenshots/SignUp1.png" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/News-Pulse/blob/main/News-Pulse-App/Screenshots/SignUp2.png" width="250" /></td>
+</tr>
+<tr>
+   <td><img src="https://github.com/jeevandeepsaini/News-Pulse/blob/main/News-Pulse-App/Screenshots/Forgot_Password.png" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/News-Pulse/blob/main/News-Pulse-App/Screenshots/Home.png" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/News-Pulse/blob/main/News-Pulse-App/Screenshots/Bookmarks.png" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/News-Pulse/blob/main/News-Pulse-App/Screenshots/Account.png" width="250" /></td>
+</tr>
+<tr>
+   <td><img src="https://github.com/jeevandeepsaini/News-Pulse/blob/main/News-Pulse-App/Screenshots/Profile.png" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/News-Pulse/blob/main/News-Pulse-App/Screenshots/Profile_Edit.png" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/News-Pulse/blob/main/News-Pulse-App/Screenshots/Change_Password.png" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/News-Pulse/blob/main/News-Pulse-App/Screenshots/Help.png" width="250" /></td>
+</tr>
+<tr>
+   <td><img src="https://github.com/jeevandeepsaini/News-Pulse/blob/main/News-Pulse-App/Screenshots/About.png" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/News-Pulse/blob/main/News-Pulse-App/Screenshots/Logout.png" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/News-Pulse/blob/main/News-Pulse-App/Screenshots/Delete.png" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/News-Pulse/blob/main/News-Pulse-App/Screenshots/Delete_Confirmation.png" width="250" /></td>
+</tr>
+</table>
+
 ## 🧰 Key Technologies
 
 - Built using native **Java + XML**
