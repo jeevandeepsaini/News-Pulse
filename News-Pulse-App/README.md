@@ -17,10 +17,6 @@
 
 ## 📸 Screenshots
 
-![Home Screen](screenshots/home.png)
-![Article Detail](screenshots/article_detail.png)
-![Categories](screenshots/categories.png)
-
 <table>
 <tr>
    <td><img src="https://github.com/jeevandeepsaini/News-Pulse/blob/main/News-Pulse-App/Screenshots/Main.png" width="250" /></td>
