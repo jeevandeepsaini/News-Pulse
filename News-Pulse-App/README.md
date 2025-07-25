@@ -55,7 +55,7 @@
 ## 🖥️ Setup Instructions
 
 ### Download the APK
-   - Download the latest version of [News Pulse](https://github.com/jeevandeepsaini/News-Pulse/releases/download/v1.0.0/NewsPulse.apk)
+   - Download the latest version of [News Pulse](https://github.com/jeevandeepsaini/News-Pulse/releases/download/v1.0.0/News_Pulse_v1.0.0.apk)
    - Install the APK on your Android device.
    - Open the app and start reading the latest news instantly!
 
