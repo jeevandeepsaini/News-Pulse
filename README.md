@@ -59,7 +59,7 @@ News-Pulse/
 
 ## 📌 How It Works
 
-1. The **backend** collects news articles via [News API](https://newsapi.org/), then performs sentiment analysis and categorizes the content.
+1. The **backend** collects news articles via [News API](https://newsapi.org/), then performs sentiment analysis and categorizes the content. It runs locally when executed and is currently deployed on GitHub Actions to run automatically once a day.
 2. The **frontend** (Android app) displays curated news feeds, allowing users to search, filter, like, bookmark, and follow topics.
 3. User preferences are stored in Firestore and used to deliver personalized news recommendations.
 4. Real-time updates ensure users receive the latest stories and see their interactions reflected instantly.
