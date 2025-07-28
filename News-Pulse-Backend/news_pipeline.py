@@ -235,6 +235,30 @@ def store_articles_in_firestore(fetched_articles):
 
     print(f"{len(fetched_articles)} articles stored in Firestore!")
 
+def delete_old_articles():
+    from datetime import timedelta
+
+    collection_ref = db.collection("news")
+    now = datetime.now(pytz.timezone("Asia/Kolkata"))
+    threshold_date = now - timedelta(days=4)
+
+    docs = collection_ref.stream()
+    deleted_count = 0
+
+    for doc in docs:
+        data = doc.to_dict()
+        pub_date_str = data.get("publication_date", "")
+        try:
+            pub_date = datetime.strptime(pub_date_str, "%d-%m-%Y, %I:%M %p")
+            pub_date = pytz.timezone("Asia/Kolkata").localize(pub_date)
+
+            if pub_date < threshold_date:
+                doc.reference.delete()
+                deleted_count += 1
+        except Exception as e:
+            print(f"Failed to parse date for doc {doc.id}: {e}")
+
+    print(f"Deleted {deleted_count} old articles from Firestore.")
 
 if __name__ == "__main__":
     print("Fetching news...")
@@ -243,5 +267,6 @@ if __name__ == "__main__":
     if articles:
         print(f"{len(articles)} articles fetched successfully!")
         store_articles_in_firestore(articles)
+        delete_old_articles()
     else:
         print("No articles fetched.")
