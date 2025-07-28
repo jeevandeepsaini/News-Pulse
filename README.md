@@ -125,7 +125,7 @@ News-Pulse/
 
 - To stay within **Firebase’s free tier**, the backend includes an automated cleanup mechanism.
 - This function:
-  - Deletes news articles that are **7 days or older** from Firestore.
+  - Deletes news articles that are **4 days or older** from Firestore.
   - Runs automatically via **GitHub Actions** on a regular schedule.
 - This helps minimize Firestore read/write operations and keeps the database optimized.
 
